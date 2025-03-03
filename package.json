@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "dotenv": "^16.4.7",
-    "install": "^0.13.0",
-    "node-fetch": "^3.3.2",
-    "npm": "^11.1.0"
+    "node-fetch": "3.3.2"
   }
 }
