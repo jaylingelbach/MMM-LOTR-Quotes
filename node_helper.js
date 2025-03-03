@@ -1,5 +1,5 @@
 const NodeHelper = require("node_helper");
-const fetch = require("node-fetch");
+
 require("dotenv").config(); // Load .env variables
 
 module.exports= NodeHelper.create({
@@ -13,6 +13,8 @@ module.exports= NodeHelper.create({
             const apiKey = process.env.API_KEY;
 
             try {
+
+                const fetch = (await import("node-fetch")).default;
                 const response = await fetch("https://the-one-api.dev/v2/quote", {
                     headers: {
                         'Accept': 'application/json',
