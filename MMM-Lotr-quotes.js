@@ -22,7 +22,7 @@ Module.register("MMM-LOTR-Quotes", {
 
     getDom: function () {
         const wrapper = document.createElement("div");
-        Log.Log('Changing for github');
+        console.Log('Changing for github');
         wrapper.innerHTML = `
             <blockquote>${this.quoteData}</blockquote>
             <cite> - ${this.characterData}</cite>

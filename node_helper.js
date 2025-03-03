@@ -21,7 +21,9 @@ module.exports= NodeHelper.create({
                         'Authorization': `Bearer ${process.env.API_KEY}`
                     }
                 });
+                console.log('RESPONSE?????',response);
                 const quotes = await response.json();
+                console.log("QUOTES?????????????", quotes)
                 const quoteData = quotes.docs[Math.floor(Math.random() * quotes.docs.length)];
 
                 // fetch character
